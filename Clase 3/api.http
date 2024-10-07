@@ -1,0 +1,33 @@
+### Recuperar peliculas
+
+GET http://localhost:3000/movies
+
+### Recuperar peliculas por ID
+GET http://localhost:3000/movies/a76e16a6-f400-497f-9872-4c2ad8b92b94
+### Recuperar peliculas por genero
+GET http://localhost:3000/movies?genre=Action
+
+
+### Crear pelicula
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "tittle": "Prueba",
+    "year": 2024,
+    "director": "Luis",
+    "genre": [
+        "Drama",
+        "Terror"
+    ]
+
+}
+
+### Actualizar pelicula
+PATCH http://localhost:3000/movies/
+
+Content-Type: application/json
+
+{
+    
+}
